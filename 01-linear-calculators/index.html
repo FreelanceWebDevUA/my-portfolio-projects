@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>js practice</title>
+  </head>
+  <body>
+    <h1>Міні-калькулятори (лінійні алгоритми)</h1>
+
+    <!-- 1. Середня оцінка -->
+    <div class="calc">
+      <h2>1. Середня оцінка</h2>
+      <input type="number" id="mark1" placeholder="Перша оцінка" />
+      <input type="number" id="mark2" placeholder="Друга оцінка" />
+      <button onclick="avgMark()">Обчислити</button>
+      <div class="result" id="res1"></div>
+    </div>
+
+    <!-- 2. Периметр кімнати -->
+    <div class="calc">
+      <h2>2. Периметр кімнати</h2>
+      <input type="number" id="side" placeholder="Сторона кімнати (м)" />
+      <button onclick="perimeter()">Обчислити</button>
+      <div class="result" id="res2"></div>
+    </div>
+
+    <!-- 3. Конвертер хвилин у години -->
+    <div class="calc">
+      <h2>3. Конвертер часу</h2>
+      <input type="number" id="minutes" placeholder="Хвилини" />
+      <button onclick="convertTime()">Конвертувати</button>
+      <div class="result" id="res3"></div>
+    </div>
+
+    <!-- 4. Вартість поїздки -->
+    <div class="calc">
+      <h2>4. Вартість поїздки</h2>
+      <input type="number" id="distance" placeholder="Відстань (км)" />
+      <input type="number" id="fuel" placeholder="Витрата пального (л/100км)" />
+      <input type="number" id="price" placeholder="Ціна за літр (грн)" />
+      <button onclick="tripCost()">Обчислити</button>
+      <div class="result" id="res4"></div>
+    </div>
+
+    <!-- 5. Середня швидкість -->
+    <div class="calc">
+      <h2>5. Середня швидкість</h2>
+      <input type="number" id="dist" placeholder="Відстань (км)" />
+      <input type="number" id="time" placeholder="Час (год)" />
+      <button onclick="avgSpeed()">Обчислити</button>
+      <div class="result" id="res5"></div>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
