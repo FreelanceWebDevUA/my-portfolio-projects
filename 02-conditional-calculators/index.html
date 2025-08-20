@@ -1,11 +1,79 @@
 <!DOCTYPE html>
-<html lang='uk'>
-<head>
-  <meta charset='UTF-8'>
-  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-  <title>02-product-landing</title>
-</head>
-<body>
-  <h1>02-product-landing</h1>
-</body>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>02-product-landing</title>
+    <link rel="stylesheet" href="../01-linear-calculators/css/style.css" />
+  </head>
+  <body>
+    <main id="main-content">
+      <h1>02-product-landing</h1>
+      <!-- З клавіатури вводяться імена двох дітей та кількість у них цукерок. Вивести не екран ім’я тієї дитини, у якої кількість цукерок є більшою, або вивести, що кількість однакова. -->
+      <div class="calc">
+        <h2>2. Цукерки</h2>
+        <input type="text" id="child1" placeholder="Ім'я першої дитини" />
+        <input type="number" id="candies1" placeholder="Кількість цукерок 1" />
+        <input type="text" id="child2" placeholder="Ім'я другої дитини" />
+        <input type="number" id="candies2" placeholder="Кількість цукерок 2" />
+        <button onclick="compareCandies()">Порівняти</button>
+        <div class="result" id="res2"></div>
+      </div>
+    </main>
+    <div id="main-no-content">
+      <h3>Вхід заборонено ❌</h3>
+    </div>
+    <!-- <div class="container">
+      <h2>🛒 Кошик магазину</h2>
+
+      <label>
+        Ціна товару (грн):
+        <input type="number" id="price" value="500" />
+      </label>
+
+      <label>
+        Кількість:
+        <input type="number" id="quantity" value="2" />
+      </label>
+
+      <button id="calcBtn">Розрахувати</button>
+
+      <div class="result">
+        <p id="total"></p>
+        <p id="delivery"></p>
+      </div>
+    </div> -->
+    <div class="container">
+      <h1>🛒 Кошик магазину</h1>
+
+      <label>
+        Ціна товару (грн):
+        <input type="number" id="price" value="500" />
+      </label>
+
+      <label>
+        Кількість:
+        <input type="number" id="quantity" value="2" />
+      </label>
+
+      <label>
+        Виберіть доставку:
+        <select id="deliveryType">
+          <option value="nova">Нова Пошта</option>
+          <option value="ukr">Укрпошта</option>
+          <option value="courier">Кур’єр</option>
+          <option value="pickup">Самовивіз</option>
+        </select>
+      </label>
+
+      <button id="calcBtn">Розрахувати</button>
+
+      <div class="result">
+        <p id="total"></p>
+        <p id="delivery"></p>
+      </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+  </body>
 </html>
