@@ -1,7 +1,7 @@
 # 🎨 My JS Learning Projects
 
 В цьому репозиторії зібрані мої навчальні проєкти по курсу **JavaScript**.  
-Всі роботи адаптивні, виконані з використанням **HTML, CSS, JavaScript**, і охоплюють теми від лінійних алгоритмів до умов, DOM та LocalStorage.
+Всі роботи адаптивні, виконані з використанням **HTML, CSS, JavaScript**, і охоплюють теми від лінійних алгоритмів до DOM та LocalStorage.
 
 ---
 
@@ -9,84 +9,57 @@
 
 my-portfolio-projects/
 │
-├── 01-linear-calculators/
-├── 02-conditional-calculators/
-├── 03-portfolio-site/
-├── 04-event-countdown/
-├── 05-todo-app/
+├── 01-linear-calculators/ # Урок №2. Лінійні алгоритми
+├── 02-conditional-calculators/ # Урок №3–4. Арифметичні та логічні вирази + практика
+├── 03-loops/ # Урок №5. Цикли
+│
+├── 10-portfolio-site/ # Додатковий проєкт (сайт-портфоліо)
+├── 11-event-countdown/ # Додатковий проєкт (таймер події)
+├── 12-todo-app/ # Додатковий проєкт (ToDo зі збереженням)
+│
 └── README.md
 
 ---
 
-## 📂 Проєкти
+## 📘 Опис уроків
 
 ### 1. [Linear Calculators](./01-linear-calculators)
 
-Набір міні-калькуляторів, реалізованих через **лінійні алгоритми**:
-
-- середнє арифметичне,
-- периметр квадрата,
-- конвертер хвилин у години,
-- вартість поїздки,
-- середня швидкість.
-
-🔗 [Live Demo](https://FreelanceWebDevUA.github.io/my-portfolio-projects/01-linear-calculators)
-
----
+- Лінійні алгоритми (середнє арифметичне, периметр, конвертери тощо).
 
 ### 2. [Conditional Calculators](./02-conditional-calculators)
 
-Міні-проєкти з **умовними операторами**:
+- Арифметичні та логічні вирази, умовні оператори, практика.
 
-- перевірка віку,
-- калькулятор з вибором операції,
-- визначення пори року по місяцю,
-- система оцінок,
-- перевірка парності числа.
+### 3. [Loops](./03-loops)
 
-🔗 [Live Demo](https://FreelanceWebDevUA.github.io/my-portfolio-projects/02-conditional-calculators)
+- Завдання з використанням циклів `for`, `while`, `do...while`.
 
 ---
 
-### 3. [Portfolio Site (HTML + CSS + JS)](./03-portfolio-site)
+## 🧑‍💻 Додаткові проєкти
 
-Односторінковий сайт-візитівка, де використані:
-
-- інтерактивні кнопки та меню,
-- плавна прокрутка до секцій,
-- базові JS-анімації при скролі.
-
-🔗 [Live Demo](https://FreelanceWebDevUA.github.io/my-portfolio-projects/03-portfolio-site)
+- [Portfolio Site](./10-portfolio-site)
+- [Event Countdown](./11-event-countdown)
+- [To-Do App](./12-todo-app)
 
 ---
 
-### 4. [Event Countdown](./04-event-countdown)
+## 🚀 Як працювати з GitHub
 
-Лендінг події з таймером зворотного відліку та формою реєстрації.
+2. Додавання нових змін:
+   git add .
+   git commit -m "Оновлено: додано урок №5 (цикли)"
+   git push origin main
+3. Як підтягнути останні зміни з GitHub:
+   git pull origin main
 
-- Валідація форми,
-- таймер, що працює в реальному часі.
+4. Перевірка статусу:
+   git status
 
-🔗 [Live Demo](https://FreelanceWebDevUA.github.io/my-portfolio-projects/04-event-countdown)
-
----
-
-### 5. [To-Do App](./05-todo-app)
-
-Веб-додаток зі списком завдань:
-
-- додавання/видалення завдань,
-- збереження у LocalStorage,
-- фільтрація та сортування.
-
-🔗 [Live Demo](https://FreelanceWebDevUA.github.io/my-portfolio-projects/05-todo-app)
-
----
-
-## 🚀 Як запустити локально
-
-1. Клонувати репозиторій:
+### 1. Клонування репозиторію (тільки 1 раз):
 
 ```bash
 git clone https://github.com/FreelanceWebDevUA/my-portfolio-projects.git
+cd my-portfolio-projects
 ```

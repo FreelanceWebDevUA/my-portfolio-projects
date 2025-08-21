@@ -74,6 +74,27 @@
       </div>
     </div>
 
+    <h2>Оберіть смайлик:</h2>
+    <p>1. Веселий<br />2. Сумний<br />3. Обурений</p>
+
+    <input type="number" id="choice" placeholder="Введіть число (1-3)" />
+    <button onclick="showSmile()">Показати</button>
+
+    <h2>🎲 Гра в кості</h2>
+    <p>
+      Правила: <br />
+      1) Можна кинути кубик до 2 разів.<br />
+      2) Парне число ➝ додає бали.<br />
+      3) Непарне ➝ віднімає бали.<br />
+      4) Виграє той, у кого більше балів.
+    </p>
+
+    <button onclick="rollDice()">🎲 Кинути кубик</button>
+    <button onclick="finishGame()">🏁 Завершити гру</button>
+
+    <div class="result" id="gameResult"></div>
+
+    <div id="result"></div>
     <script src="./js/script.js"></script>
   </body>
 </html>

@@ -364,3 +364,80 @@ document.getElementById("calcBtn").addEventListener("click", function () {
 // alert(`${num1} ${num2} ${num3}`);
 
 // =================================================================================
+function showSmile() {
+  let choice = Number(document.getElementById("choice").value);
+  let result = document.getElementById("result");
+  result.innerHTML = "";
+
+  let img = document.createElement("img");
+
+  switch (choice) {
+    case 1:
+      img.src = "https://i.ibb.co/NZj8MPq/happy.png"; // веселий
+      result.appendChild(img);
+      break;
+    case 2:
+      img.src = "https://i.ibb.co/2N3dykD/sad.png"; // сумний
+      result.appendChild(img);
+      break;
+    case 3:
+      img.src = "https://i.ibb.co/0nTt27P/angry.png"; // обурений
+      result.appendChild(img);
+      break;
+    default:
+      result.innerHTML =
+        "<p style='color:red'>Помилка: введіть число від 1 до 3</p>";
+  }
+}
+
+// =========================================================================================================
+
+// Як працює:
+// Натискаєш "Кинути кубик" — обидва (гравець і комп) кидають по одному разу.
+// Можна зробити до двох кидків.
+// Коли вирішив — тиснеш "Завершити гру" і бачиш результат.
+
+let playerScore = 0;
+let computerScore = 0;
+let throws = 0;
+
+function rollDice() {
+  if (throws >= 2) {
+    alert("Ви вже кидали двічі! Натисніть 'Завершити гру'.");
+    return;
+  }
+
+  throws++;
+
+  // Кидок для гравця
+  let playerRoll = Math.floor(Math.random() * 6) + 1;
+  playerScore += playerRoll % 2 === 0 ? playerRoll : -playerRoll;
+
+  // Кидок для комп'ютера
+  let computerRoll = Math.floor(Math.random() * 6) + 1;
+  computerScore += computerRoll % 2 === 0 ? computerRoll : -computerRoll;
+
+  document.getElementById("gameResult").innerHTML = `
+        <p>Кидок №${throws}</p>
+        <p>Ви кинули: ${playerRoll} (Ваші бали: ${playerScore})</p>
+        <p>Комп'ютер кинув: ${computerRoll} (Бали комп'ютера: ${computerScore})</p>
+      `;
+}
+
+function finishGame() {
+  let result = "";
+
+  if (playerScore > computerScore) {
+    result = "🎉 Ви виграли!";
+  } else if (playerScore < computerScore) {
+    result = "😢 Ви програли!";
+  } else {
+    result = "🤝 Нічия!";
+  }
+
+  document.getElementById("gameResult").innerHTML += `
+        <hr><p><b>Фінальний рахунок:</b><br>
+        Ви: ${playerScore} | Комп'ютер: ${computerScore}</p>
+        <p>${result}</p>
+      `;
+}

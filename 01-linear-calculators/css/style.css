@@ -37,3 +37,8 @@ button:hover {
   font-weight: bold;
   color: #2c3e50;
 }
+img {
+  width: 150px;
+  margin-top: 20px;
+  /* display: none; */
+}
